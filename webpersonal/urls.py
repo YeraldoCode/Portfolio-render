@@ -30,5 +30,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-# Servir archivos media tanto en desarrollo como en producción
+# Servir archivos media en cualquier entorno
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# Servir archivos estáticos en desarrollo
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
