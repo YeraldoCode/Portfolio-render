@@ -19,6 +19,7 @@ from django.urls import path# type: ignore
 from core import views as core_views
 from django.conf import settings# type: ignore
 from portfolio import views as portfolio_views
+from django.conf.urls.static import static
 
 
 urlpatterns = [
@@ -29,7 +30,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-
-if settings.DEBUG:
-    from django.conf.urls.static import static
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# Servir archivos media tanto en desarrollo como en producción
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
