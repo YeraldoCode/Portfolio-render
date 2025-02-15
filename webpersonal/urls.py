@@ -28,7 +28,7 @@ urlpatterns = [
     path('portfolio/', portfolio_views.portfolio, name="portfolio"),
     path('contact/', core_views.contact, name="contact"),
     path('admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
 
 # Servir archivos media en cualquier entorno
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
