@@ -2,7 +2,10 @@
 {% block title %}portfolio{% endblock %}  <!-- Cambiar el título de la página -->
 {%block background%}{% load static %}{% static 'core/img/portfolio-bg.jpg' %}{%endblock%}
 
-{% block headers %}<h1>Portafolio</h1><span class="subheading text-center">Trabajos realizados</span>{% endblock %}
+{% block headers %}
+<h1>Portafolio</h1>
+<span class="subheading text-center">Trabajos realizados</span>
+{% endblock %}
 
 {% block content %}
 {% if projects %}

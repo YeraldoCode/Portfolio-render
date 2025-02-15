@@ -2,7 +2,7 @@ venv/
 db.sqlite3
 __pycache__/
 /staticfiles/
-/mediafiles/
+/media/
 *.pyc
 __pycache__/
 db.sqlite3

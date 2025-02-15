@@ -4,9 +4,9 @@ set -o errexit
 pip install -r requirements.txt
 
 # Crear y dar permisos a los directorios
-mkdir -p mediafiles
+mkdir -p media
 mkdir -p staticfiles
-chmod -R 755 mediafiles
+chmod -R 755 media
 chmod -R 755 staticfiles
 
 python manage.py collectstatic --no-input
