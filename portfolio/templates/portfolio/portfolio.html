@@ -8,23 +8,29 @@
 {% endblock %}
 
 {% block content %}
-<!-- Proyecto Calculadora -->
+
 <div class="container">
-    <div class="row project">  	
-        <div class="col-lg-3 col-md-4 offset-lg-1">
-            <img class="img-fluid" src="{% static 'core/img/Calculadora.png' %}">
+        <!-- Proyecto econome -->
+        <div class="container">
+            <div class="row project">  	
+                <div class="col-lg-3 col-md-4 offset-lg-1">
+                    <img class="img-fluid" src="{% static 'core/img/econome.png' %}">
+                </div>
+                <div class="col-lg-7 col-md-8">
+                    <h2 class="section-heading title">Econome</h2>   
+                    <p>
+                        Aplicacion web para la gestion de finanzas personales.
+                        se utilizo la libreria Flask para el desarrollo de la aplicacion y la libreria SQLite para la base de datos.
+                        se utilizo la libreria Jinja2 para el desarrollo de la plantilla HTML.
+                        se utilizo la libreria WTForms para el desarrollo de los formularios.
+                        se utilizo la libreria Flask-Login para el desarrollo de la autenticacion de usuarios.s
+                        <br>
+                        <br>
+                        <a href="https://github.com/YeraldoCode/EconoMe-app" target="_blank">Ver codigo</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-7 col-md-8">
-            <h2 class="section-heading title">Calculadora</h2>   
-            <p>
-                Calculadora de operaciones matemáticas básicas. Programa realizado en Python y Tkinter.
-                implementando funciones y botones para realizar las operaciones matemáticas básicas.
-                <br>
-                <br>
-                <a href="https://github.com/YeraldoCode/AppCalculadora" target="_blank">Ver codigo</a>
-            </p>
-        </div>
-    </div>
 
     <!-- Proyecto Ping Pong -->
     <div class="container">
@@ -45,6 +51,54 @@
             </div>
         </div>
     </div>
+
+    <!-- Proyecto InfoBag -->
+    <div class="container">
+        <div class="row project">  	
+            <div class="col-lg-3 col-md-4 offset-lg-1">
+                <img class="img-fluid" src="{% static 'core/img/infobag.png' %}">
+            </div>
+            <div class="col-lg-7 col-md-8">
+                <h2 class="section-heading title">InfoBag</h2>   
+                <p>
+                    Aplicacion de escritorio donde se aplica la tecnica del web scraping para obtener informacion de empresas
+                    que cotiza en la bolsa de valores.
+                    se utilizo la libreria requests para obtener el contenido de la pagina web y la libreria BeautifulSoup para
+                    analizar el contenido de la pagina web.
+                    Se programo la aplicacion en Python y Tkinter para la interfaz de usuario.
+                
+                    <br>
+                    <br>
+                    <a href="https://github.com/YeraldoCode/InfoBag" target="_blank">Ver codigo</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Proyecto Calculadora -->
+<div class="row project">  	
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid" src="{% static 'core/img/Calculadora.png' %}">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading title">Calculadora</h2>   
+        <p>
+            Calculadora de operaciones matemáticas básicas. Programa realizado en Python y Tkinter.
+            implementando funciones y botones para realizar las operaciones matemáticas básicas.
+            <br>
+            <br>
+            <a href="https://github.com/YeraldoCode/AppCalculadora" target="_blank">Ver codigo</a>
+        </p>
+    </div>
+</div>
+    
+
+
+
+
+
 </div>
 {% endblock %}
 
